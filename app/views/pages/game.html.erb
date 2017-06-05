@@ -1,0 +1,14 @@
+<h1>Let's play a game</h1>
+<p>Here is the scrambled text: <%=@grid_display %> [method call from broken program]</p>
+
+<p>start time is <%= @start_time %>input your answer here:</p>
+
+<form action="score">
+  <label for="question">what is the scrambled text?</label>
+  <input type="text" id="question" name="answer" placeholder="Enter word here">
+  <input type="submit" value="Go on!">
+   <input type="hidden" name="start" value ="<%=@start_time %>">
+   <input type="hidden" name="grid" value ="<%=@grid_display %>">
+</form>
+
+<<p><%=@input%></p>
